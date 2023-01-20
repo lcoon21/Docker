@@ -1,0 +1,17 @@
+part 3:
+docker run -it -p 8080:81 nginx bash
+
+docker cp $(pwd) [CONTAINER_NAME]:/home
+docker exec -it -w /home/part_3  [CONTAINER_NAME] bash build.sh
+
+
+part4:
+docker run -it -p 80:81 -v pwd:/etc/nginx -u="root" part4:check
+
+part5:
+dockle -ak NGINX_GPGKEY [IMAGE_NAME]
+
+
+part6:
+docker-compose build
+docker-compose up
